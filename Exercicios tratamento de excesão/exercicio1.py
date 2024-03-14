@@ -3,11 +3,11 @@ class Excecaoimpar (Exception):
 
 
 try:
-    a = int(input("Escreva um numero inteiro."))
+    a = int(input("Digite um numero inteiro."))
     if a % 2 == 0:
         print("Seu número é par")
     else:
-        raise Excecaoimpar("O numero nao pode ser impar")
+        raise Excecaoimpar("O numero não pode ser impar")
 except Excecaoimpar as e:
     print(e)
 except ValueError:
