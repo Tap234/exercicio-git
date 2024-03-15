@@ -4,7 +4,7 @@ while(True):
     b = int(input("Digite sua segunda nota"))
     c = int(input("Digite sua segunda nota"))
 
-    with open("notas.txt", "w") as arquivo:
+    with open("notas.txt", "a") as arquivo:
         arquivo.write(f"{nome}\n")
         arquivo.write(f"{a}\n")
         arquivo.write(f"{b}\n")
