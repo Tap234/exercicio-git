@@ -1,8 +1,8 @@
 while(True):
     nome = str(input("Digite seu nome"))
-    a = int(input("Digite sua primeira nota"))
-    b = int(input("Digite sua segunda nota"))
-    c = int(input("Digite sua segunda nota"))
+    a = float(input("Digite sua primeira nota"))
+    b = float(input("Digite sua segunda nota"))
+    c = float(input("Digite sua segunda nota"))
 
     with open("notas.txt", "a") as arquivo:
         arquivo.write(f"{nome}\n")

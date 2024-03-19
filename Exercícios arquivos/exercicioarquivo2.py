@@ -1,3 +1,4 @@
-with open("notas.txt","r") as arquivo:
-    texto = arquivo.readlines()
-    print(texto)
+with open ("notas.txt", "r") as arquivo:
+    linhas = arquivo.readlines()
+    for linha in linhas:
+        print(linha.strip().split())
