@@ -19,8 +19,17 @@ for i in range(len(nomes_exame)):
         a = float(input(f"Digite a nota do {nome}:"))
         notas_exame.append(a)
         break
-nota_final = (sum(notas_exame[0] + medias[0])) / (len(notas_exame[0] + medias[0]))
+for i in range(len(nomes_exame)):
+    nome = nomes_exame[i]
+    media = medias[i]
+    nota_exame = notas_exame[i]
+    sublista = [media , nota_exame]
+    media_final = sum(sublista) / len(sublista)
+    if media_final >= 5:
+        with open("aprovados.txt", "r+") as arquivo_aprovados:
+            arquivo.seek()
+    print(f"{nome} {media_final}")
 print(medias)
 print(nomes_exame)
 print(notas_exame)
-print(nota_final)
+print(media_final)
