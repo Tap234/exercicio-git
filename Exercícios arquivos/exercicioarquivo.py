@@ -2,7 +2,7 @@ while(True):
     nome = str(input("Digite seu nome"))
     a = float(input("Digite sua primeira nota"))
     b = float(input("Digite sua segunda nota"))
-    c = float(input("Digite sua segunda nota"))
+    c = float(input("Digite sua terceira nota"))
 
     with open("notas.txt", "a") as arquivo:
         arquivo.write(f"{nome}\n")
