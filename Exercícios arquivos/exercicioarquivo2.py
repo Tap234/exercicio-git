@@ -24,13 +24,10 @@ with open("aprovados.txt", "w") as arquivo_aprovados, \
         nome = nomes_alunos[i]
         medias_alunos = medias[i]
         if medias_alunos >= 7:
-            arquivo_aprovados.write(f"{nome} \n{medias_alunos}\n")
+            arquivo_aprovados.write(f"Aprovado: {nome} \n{medias_alunos}\n")
         elif 7 > medias_alunos >= 5:
             arquivo_exame.write(f"{nome} \n{medias_alunos}\n")
         else:
-            arquivo_reprovados.write(f"{nome} \n{medias_alunos}\n")
+            arquivo_reprovados.write(f"Reprovado: {nome} \n{medias_alunos}\n")
         print(f"{nome}, {medias_alunos}")
-
-print(notas)
-print(medias)
-print(nomes_alunos)
+print("Procedimento concluido")

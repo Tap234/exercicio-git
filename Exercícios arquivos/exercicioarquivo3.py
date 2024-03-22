@@ -26,10 +26,9 @@ for i in range(len(nomes_exame)):
     sublista = [media , nota_exame]
     media_final = sum(sublista) / len(sublista)
     if media_final >= 5:
-        with open("aprovados.txt", "r+") as arquivo_aprovados:
-            arquivo.seek()
-    print(f"{nome} {media_final}")
-print(medias)
-print(nomes_exame)
-print(notas_exame)
-print(media_final)
+        with open("aprovados.txt", "a") as arquivo_aprovados:
+            arquivo_aprovados.write(f"Aprovado apos exame:{nome}\n {media_final}\n")
+    else:
+        with open("reprovados.txt", "a") as arquivo_reprovdos:
+            arquivo_reprovdos.write(f"Reprovados apos exame: {nome} \n{media_final}\n")
+print("Procedimento concluido")
