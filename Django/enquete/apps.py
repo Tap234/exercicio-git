@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class HellowordConfig(AppConfig):
+class enqueteConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'helloword'
+    name = 'enquete'
